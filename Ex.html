@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VU</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      header {
+        background-color: yellow;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+        border: 2px solid yellow;
+        border-radius: 30px;
+        margin-bottom: 20px;
+        width: 60%;
+      }
+
+      sidebar {
+        float: left;
+        width: 10%;
+        height: 300px; 
+        background: orange;
+        padding: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border: 2px solid orange;
+        border-radius: 30px;
+      }
+
+      sidebar ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      content {
+        float: left;
+        padding: 20px;
+        width: 49%;
+        background-color: lightgreen;
+        height: 300px;
+        border: 2px solid lightgreen;
+        border-radius: 30px;
+      }
+
+      content div {
+        background: green;
+        margin: 20px;
+        border: 2px solid green;
+        border-radius: 10px;
+      }
+
+      section:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      footer {
+        background-color: purple;
+        width: 60%;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        border: 2px solid purple;
+        border-radius: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Header</h2>
+    </header>
+    <section>
+      <sidebar>
+        <ul>
+          <li><a href="#">One</a></li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+        </ul>
+      </sidebar>
+      <content>
+        <div class="post">
+          HTML is a markup language used to tell your browser how to structure the web pages you visit.
+        </div>
+        <div class="post">
+          It can be as complicated or as simple as the web developer wishes it to be.
+        </div>
+        <div class="post">
+          HTML consists of a series of elements, which you use to enclose, wrap, 
+          or mark up different parts of the content to make it appear or act a certain way.
+        </div>
+      </content>
+    </section>
+
+    <footer>
+      <h2>Footer</h2>
+    </footer>
+  </body>
+</html>
